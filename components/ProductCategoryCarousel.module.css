@@ -1,0 +1,17 @@
+.cardContainer {
+  display: flex;
+  gap: 32px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.card {
+  padding: 2;
+  margin: 1;
+  min-width: 200px;
+  min-height: 150px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+}

@@ -1,0 +1,54 @@
+{
+    "carousel": [
+        {
+            "id":"1",
+            "name": "Random Name #1",
+            "description": "Probably the most random thing you have ever seen!",
+            "imageURL": "https://www.paul-india.com/wp-content/uploads/2020/05/website-banner-1920x500-rewards-opt-min_optimized.png",
+            "navigateTo":"/menu"
+        },
+        {
+            "id":"2",
+            "name": "Random Name #2",
+            "description": "Hello World!",
+            "imageURL": "https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+        }
+    ],
+    "categories": [
+        {
+            "id":"1",
+            "name": "Random Name #1",
+            "image":"https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+        },
+        {
+            "id":"2",
+            "name": "Random Name #2",
+            "image":"https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+        },
+        {
+            "id":"3",
+            "name": "Random Name #2",
+            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+        },
+        {
+            "id":"4",
+            "name": "Random Name #2",
+            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+        },
+        {
+            "id":"5",
+            "name": "Random Name #2",
+            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+        },
+        {
+            "id":"6",
+            "name": "Random Name #2",
+            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+        },
+        {
+            "id":"7",
+            "name": "Random Name #2",
+            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+        }
+    ]
+}
