@@ -1,8 +1,7 @@
 import Link from "next/link";
 
-const withConditionalNavigation = (WrappedComponent, prop) => {
+const withConditionalNavigation = (WrappedComponent) => {
   const HOCComponent = (props) => {
-    console.log(prop);
     return props.item.navigateTo ? (
       <Link href={props.item.navigateTo}>
         <WrappedComponent {...props} />

@@ -1,16 +1,43 @@
+.logo_name_container h1.sticky_color_change,
+.nav_items > ul > li.sticky_color_change {
+  color: #333;
+  background-color: transparent;
+}
+
+.sticky_color_change:hover {
+  transform: scale(1.2);
+}
+
+.color_change_sticky:hover {
+  color: #6f6d58;
+}
+
 .header {
+  transition: #333 0.3s ease;
   position: relative;
-  background-color: #fffff2; /*#e5e5e5ff*/
+  background-color: #333; /*#e5e5e5ff*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 48px;
   /* border-bottom: 3px solid #f48c06; */
   top: 0;
-  z-index: 100;
+  z-index: 2;
   /* background-image: url("../../Ammazza.png"); */
   background-size: contain;
   min-height: 100px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hamburger {
@@ -35,13 +62,18 @@
 } */
 
 .header_container {
+  top: 0px;
   position: sticky;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo_container_anchor {
   text-decoration: none;
   display: contents;
+}
+
+.navLink {
+  font-weight: 100;
 }
 
 .logo_container {
@@ -79,8 +111,8 @@
   font-size: 24px;
   text-decoration: overline;
   font-weight: 700;
-  color: #000;
-  background-color: #fffff2;
+  color: #fefee9;
+  background-color: #333;
 }
 
 .nav_items {
@@ -112,13 +144,14 @@
 
 .nav_items > ul > li {
   cursor: pointer;
-  color: #000;
-  background-color: #fffff2;
+  color: #fefee9;
+  background-color: #333;
   font-weight: 700;
   border-radius: 4px;
 }
 
 .navMenu {
+  position: initial;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,6 +159,14 @@
 }
 
 @media screen and (max-width: 780px) {
+  /* .nav_items > ul */
+  .navMenu.navMenu_sticky {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
   /* hamburger */
   .hamburger {
     display: block;
@@ -133,13 +174,18 @@
   }
 
   .bar {
-    background-color: #120f0b;
+    /* background-color: #120f0b; */
+    background-color: #fefee9;
     width: 20px;
     height: 3px;
     display: block;
     margin: 5px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+  }
+
+  .bar.bar_sticky {
+    background-color: #120f0b;
   }
 
   /* adding active class to the bars  */
@@ -164,7 +210,7 @@
     text-align: start;
     width: 100%;
     transition: 0.7s ease-in-out;
-    background-color: #fffff2;
+    background-color: #333;
     padding: 10px;
   }
 
@@ -180,6 +226,7 @@
 @media screen and (width<= 779px) {
   .header {
     min-height: 82px;
+    padding: 0px 12px;
   }
   .logo {
     width: 80px;

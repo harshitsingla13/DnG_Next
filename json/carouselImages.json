@@ -4,51 +4,63 @@
             "id":"1",
             "name": "Random Name #1",
             "description": "Probably the most random thing you have ever seen!",
-            "imageURL": "https://www.paul-india.com/wp-content/uploads/2020/05/website-banner-1920x500-rewards-opt-min_optimized.png",
+            "imageURL": "https://res.cloudinary.com/doe5yz1ml/image/upload/v1711784879/1_49c6e610a3.jpg",
             "navigateTo":"/menu"
         },
         {
             "id":"2",
             "name": "Random Name #2",
             "description": "Hello World!",
-            "imageURL": "https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+            "imageURL": "https://res.cloudinary.com/doe5yz1ml/image/upload/v1711784879/1_49c6e610a3.jpg"
         }
     ],
     "categories": [
         {
             "id":"1",
-            "name": "Random Name #1",
-            "image":"https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+            "name": "Cakes",
+            "image":"/cake.png"
         },
         {
             "id":"2",
-            "name": "Random Name #2",
-            "image":"https://www.paul-india.com/wp-content/uploads/2024/04/European-Elegance_desk.jpg"
+            "name": "Biscuits",
+            "image":"/cookies.png"
         },
         {
             "id":"3",
-            "name": "Random Name #2",
-            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+            "name": "Cupcakes",
+            "image":"/cupcake.png"
         },
         {
             "id":"4",
-            "name": "Random Name #2",
-            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+            "name": "Ice-cream",
+            "image":"/iceCream.jpeg"
         },
         {
             "id":"5",
-            "name": "Random Name #2",
-            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
-        },
-        {
-            "id":"6",
-            "name": "Random Name #2",
-            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
-        },
-        {
-            "id":"7",
-            "name": "Random Name #2",
-            "image":"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png"
+            "name": "Breads",
+            "image":"/breads.jpg"
         }
-    ]
+    ],
+    "testimonials":[
+        {
+            "id":1,
+          "text": "This is a testimonial from a happy customer.",
+          "name": "John Doe"
+        },
+        {
+            "id":2,
+          "text": "This is another testimonial from a satisfied customer.",
+          "name": "Jane Doe"
+        },
+        {
+            "id":3,
+          "text": "This is yet another testimonial from a content customer.",
+          "name": "Bob Smith"
+        },
+        {
+            "id":4,
+            "text": "This is yet another testimonial from a content customer.",
+            "name": "Bob Smith"
+          }
+      ]
 }

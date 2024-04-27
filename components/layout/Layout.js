@@ -1,33 +1,33 @@
-import { useEffect, useMemo, useRef, useState } from "react";
 import Header from "../header/Header.js";
 import Footer from "../footer/Footer.js";
-import Navbar from "../header/Navbar.js";
+import FloatingButton from "../floatingButton/FloatingButton.js";
+import DialogWithButton from "../dialogWithButton/DialogWithButton.js";
 
 export const Layout = (props) => {
-  const { showHeader = true, showFooter = false, children } = props;
+  const { children } = props;
+
+  const onClickHandler = () => {
+    console.log("Hi Button");
+  };
 
   return (
-    <>
-      {showHeader && (
-        <Header />
-        //   <Header
-        //     isUserLoggedIn={false}
-        //     announcementBar={null}
-        //     appName="homepage"
-        //     onNavClickHandler={() => {
-        //       //
-        //     }}
-        //   />
-      )}
-
+    <div className="min-h-screen">
+      <Header />
       {/* shimmer skeleton loader */}
       {/* {isLoading && <Shimmer />} */}
 
       {/* artist component */}
-      <main style={{ padding: "0px 48px", color: "#000000" }}>{children}</main>
+      <main
+        className="py-5 px-7 md:py-9 md:px-12 #000"
+        // style={{ padding: "36px 48px", color: "#000000" }}
+      >
+        {children}
+      </main>
+      {/* <FloatingButton buttonProps={{ onClick: onClickHandler }} /> */}
+      <DialogWithButton />
       {/* {component} */}
 
-      {showFooter && <Footer appName="homepage" testID="family-footer" />}
-    </>
+      <Footer />
+    </div>
   );
 };

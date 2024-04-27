@@ -43,18 +43,12 @@ const CustomCard = ({ image, title, subtitle }) => {
 
   return (
     <Card className={styles.card}>
-      <CardMedia
+      {/* <CardMedia
         className={styles.image}
         image={image}
         // title={props.item.name}
-      ></CardMedia>
-      {/* <Image
-        src={image}
-        alt={title}
-        className={styles.image}
-        width={100}
-        height={100}
-      /> */}
+      ></CardMedia> */}
+      <Image src={image} alt={title} className={styles.image} fill />
       <CardContent className={styles.content}>
         <Typography variant="h5" component="h2">
           {title}

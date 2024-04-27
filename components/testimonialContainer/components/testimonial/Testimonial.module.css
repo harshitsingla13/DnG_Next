@@ -1,0 +1,27 @@
+.card {
+  max-width: 400px;
+  /* margin: auto; */
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.avatar {
+  --avatar-width: 80px;
+  width: var(--avatar-width);
+  height: 80px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(0px - (0.5 * var(--avatar-width)));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.content {
+  margin-top: 60px;
+}

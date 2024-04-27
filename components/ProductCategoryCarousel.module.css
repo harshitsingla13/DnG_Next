@@ -1,17 +1,12 @@
-.cardContainer {
-  display: flex;
-  gap: 32px;
-  /* justify-content: space-evenly; */
-  align-items: center;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.textBackground {
+  background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
 }
-.card {
-  padding: 2;
-  margin: 1;
-  min-width: 200px;
-  min-height: 150px;
-  display: flex;
-  /* justify-content: space-evenly; */
-  /* align-items: center; */
+
+.textColor {
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+}
+
+.mobile_navigation_button {
+  background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 135%);
 }
