@@ -1,0 +1,174 @@
+{
+    "products": {
+        "cakes":[
+        {
+            "id":"black_forest_cake",
+            "name": "Black Forest Cake",
+            "image":"/cakes/black_forest_cake.png"
+        },
+        {
+            "id":"chocolate_truffle_cake",
+            "name": "Chocolate Truffle Cake",
+            "image":"/cakes/chocolate_truffle_cake.png"
+        },
+        {
+            "id":"cheese_cake",
+            "name": "Cheese Cake",
+            "image":"/cakes/cheese_cake.png"
+        },
+        {
+            "id":"mix_fruit_cake",
+            "name": "Mix Fruit Cake",
+            "image":"/cakes/mix_fruit_cake.png"
+        },
+        {
+            "id":"opera_cake",
+            "name": "Opera Cake",
+            "image":"/cakes/opera_cake.png"
+        },
+        {
+            "id":"pineapple_cake",
+            "name": "Pineapple Cake",
+            "image":"/cakes/pineapple_cake.jpg"
+        },
+        {
+            "id":"strawberry_cake",
+            "name": "Strawberry Cake",
+            "image":"/cakes/strawberry_cake.png"
+        },
+        {
+            "id":"tiramisu",
+            "name": "Tiramisu",
+            "image":"/cakes/tiramisu.png"
+        }
+    ],
+    "biscuits":[
+        {
+            "id":"ajwain",
+            "name": "Ajwain biscuits",
+            "image":"/cookies/ajwain.png"
+        },
+        {
+            "id":"atta",
+            "name": "Atta biscuits",
+            "image":"/cookies/atta.png"
+        },
+        {
+            "id":"choco_hazelnut",
+            "name": "Chocolate Hazelnut biscuits",
+            "image":"/cookies/choco_hazelnut.png"
+        },
+        {
+            "id":"chocolate",
+            "name": "Chocolate biscuits",
+            "image":"/cookies/chocolate.png"
+        },
+        {
+            "id":"coconut",
+            "name": "Coconut biscuits",
+            "image":"/cookies/coconut.png"
+        },
+        {
+            "id":"jeera",
+            "name": "Jeera biscuits",
+            "image":"/cookies/jeera.png"
+        },
+        {
+            "id":"kaju_pista",
+            "name": "Kaju Pista biscuits",
+            "image":"/cookies/kaju_pista.png"
+        },
+        {
+            "id":"nan_khatai",
+            "name": "Nan Khatai biscuits",
+            "image":"/cookies/nan_khatai.png"
+        },
+        {
+            "id":"pistachio_biscotti",
+            "name": "Pistachio Biscotti",
+            "image":"/cookies/pistachio_biscotti.png"
+        },
+        {
+            "id":"almond_biscotti",
+            "name": "Almond Biscotti",
+            "image":"/cookies/almond_biscotti.png"
+        }
+    ],
+    "breads":[
+        {
+            "id":"burger_bun",
+            "name": "Burger Bun",
+            "image":"/breads/burger_bun.png"
+        },
+        {
+            "id":"pav_bun",
+            "name": "Pav Bun",
+            "image":"/breads/pav_bun.png"
+        },
+        {
+            "id":"sweet_bun",
+            "name": "Sweet Bun",
+            "image":"/breads/sweet_bun.png"
+        },
+        {
+            "id":"sourdough",
+            "name": "Sourdough",
+            "image":"/breads/sourdough.png"
+        },
+        {
+            "id":"focaccia",
+            "name": "Focaccia Sourdough",
+            "image":"/breads/focaccia.png"
+        }
+    ],
+    "ice-cream":[
+        {
+            "id":"vanilla",
+            "name": "Vanilla",
+            "image":"/iceCream/vanilla.png"
+        },
+        {
+            "id":"paan",
+            "name": "Paan",
+            "image":"/iceCream/paan.png"
+        },
+        {
+            "id":"oreo",
+            "name": "Oreo",
+            "image":"/iceCream/oreo.png"
+        },
+        {
+            "id":"mango",
+            "name": "Mango",
+            "image":"/iceCream/mango.png"
+        },
+        {
+            "id":"chocolate",
+            "name": "Chocolate",
+            "image":"/iceCream/chocolate.png"
+        }
+    ],
+    "cupcakes":[
+        {
+            "id":"vanilla_cupcake",
+            "name": "Vanilla",
+            "image":"/cupcake/vanilla_cupcake.png"
+        },
+        {
+            "id":"orange",
+            "name": "Orange",
+            "image":"/cupcake/orange.png"
+        },
+        {
+            "id":"strawberry",
+            "name": "Strawberry",
+            "image":"/cupcake/strawberry.png"
+        },
+        {
+            "id":"chocolate",
+            "name": "Chocolate",
+            "image":"/cupcake/chocolate.png"
+        }
+    ]
+}
+}

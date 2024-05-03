@@ -5,17 +5,12 @@ import { Avatar } from "@/components/ui/avatar";
 import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import Image from "next/image";
 
-const Testimonial = ({
-  image = "",
-  city = "Gurgaon",
-  name = "Harshit",
-  content = "sadasdasd ajfsbdajhsb as djabsdhj",
-}) => {
+const Testimonial = ({ data }) => {
   return (
     <Card className="w-full">
-      <Avatar className="m-auto">
-        <AvatarImage src={image} />
-        <AvatarFallback>{name}</AvatarFallback>
+      <Avatar className="m-auto w-12 h-12">
+        <AvatarImage src={data.image} />
+        <AvatarFallback>{data.name}</AvatarFallback>
       </Avatar>
       {/* <Image
         alt={name + " image"}
@@ -29,7 +24,7 @@ const Testimonial = ({
         width={600}
         fill
       /> */}
-      <CardContent className="space-y-4 p-6">
+      <CardContent className="space-y-4 p-2">
         <blockquote className="text-lg font-semibold leading-snug">
           “The customer service I received was exceptional. The support team
           went above and beyond to address my concerns.”
@@ -40,7 +35,7 @@ const Testimonial = ({
             <AvatarFallback>JW</AvatarFallback>
           </Avatar>
           <div>
-            <div className="font-semibold">{name}</div>
+            <div className="font-semibold">{data.name}</div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
               CEO, Acme Inc
             </div>

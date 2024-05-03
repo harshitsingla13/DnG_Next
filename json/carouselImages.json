@@ -18,27 +18,32 @@
         {
             "id":"1",
             "name": "Cakes",
-            "image":"/cake.png"
+            "image":"/cake.png",
+            "navigateTo":"/menu/cakes"
         },
         {
             "id":"2",
             "name": "Biscuits",
-            "image":"/cookies.png"
+            "image":"/cookies_basket.png",
+            "navigateTo":"/menu/biscuits"
         },
         {
             "id":"3",
             "name": "Cupcakes",
-            "image":"/cupcake.png"
+            "image":"/cupcake.png",
+            "navigateTo":"/menu/cupcakes"
         },
         {
             "id":"4",
             "name": "Ice-cream",
-            "image":"/iceCream.jpeg"
+            "image":"/iceCream.jpeg",
+            "navigateTo":"/menu/ice-cream"
         },
         {
             "id":"5",
             "name": "Breads",
-            "image":"/breads.jpg"
+            "image":"/breads.png",
+            "navigateTo":"/menu/breads"
         }
     ],
     "testimonials":[

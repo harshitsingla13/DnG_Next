@@ -1,23 +1,20 @@
-import CustomCarousel from "@/components/customCarousel/CustomCarousel";
-import ProductCategoryCarousel from "@/components/ProductCategoryCarousel";
-import PersonCard from "@/components/testimonialContainer/components/testimonial/Testimonial";
+import AutoPlayCarousel from "@/components/autoPlayCarousel/AutoPlayCarousel";
+import ProductCarouselCard from "@/components/productCarouselCard/ProductCarouselCard";
 import TestimonialContainer from "@/components/testimonialContainer/TestimonialContainer";
 import { getLocalData } from "@/lib/getLocalData";
 import React from "react";
 
-function Home({ items, categories, testimonials }) {
+function Home({ categories, testimonials }) {
   return (
     <div className="body_container">
-      {/* <CustomCarousel items={items} /> */}
-      <ProductCategoryCarousel categories={categories} />
-      {/* <section>Products</section> */}
+      <AutoPlayCarousel
+        data={categories}
+        carouselItemContent={ProductCarouselCard}
+      />
       <section>Info/About us</section>
       <section>USP</section>
       <TestimonialContainer testimonials={testimonials} />
-      {/* <PersonCard /> */}
-      <section>
-        {/* <TestimonialContainer testimonials={testimonials} /> */}
-      </section>
+      <section></section>
     </div>
   );
 }

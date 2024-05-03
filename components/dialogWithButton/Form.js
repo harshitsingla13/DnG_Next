@@ -34,14 +34,14 @@ const FormSchema = z.object({
   }),
 });
 
-export function InputForm({ setParentOpen }) {
+export function InputForm({ setParentOpen, defaultValue }) {
   const form = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      name: "",
-      mobile: "",
-      orderType: "bulk",
-      orderDetail: "",
+      name: defaultValue?.name ?? "",
+      mobile: defaultValue?.mobile ?? "",
+      orderType: defaultValue?.orderType ?? "bulk",
+      orderDetail: defaultValue?.orderDetail ?? "",
     },
   });
 

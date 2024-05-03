@@ -25,6 +25,8 @@ function Header() {
 
   useEffect(() => {
     const listener = (e) => {
+      e.stopPropagation();
+      e.preventDefault();
       const header = document.getElementById("header"); // Get the header element
       const sticky = header.offsetTop; // Get the offset position of the header
       const companyTitle = document.getElementById("company_heading"); // Get the header element
@@ -32,8 +34,10 @@ function Header() {
       const navLink = document.getElementsByClassName(styles.navLink);
       const crossIcon = document.getElementsByClassName(styles.bar);
       const navMenu = document.getElementsByClassName("navMenus");
+      console.log(window.scrollY, sticky);
 
       if (window.scrollY > sticky) {
+        console.log("first");
         header.classList.add(styles.sticky); // Add a class to the header when it becomes sticky
         companyTitle.classList.add(styles.sticky_color_change);
         !isSticky && setIsSticky(true);
@@ -57,6 +61,7 @@ function Header() {
         }
         // navList.forEach((nav) => nav.classList.add(styles.sticky_color_change));
       } else {
+        console.log("second");
         header.classList.remove(styles.sticky); // Remove the class when it is no longer sticky
         companyTitle.classList.remove(styles.sticky_color_change);
         setIsSticky(false);
@@ -81,6 +86,7 @@ function Header() {
       }
     };
     window.addEventListener("scroll", listener);
+    // window.addEventListener("scroll", () => console.log(window.scrollY));
 
     return () => {
       window.removeEventListener("scroll", () => {

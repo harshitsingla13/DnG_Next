@@ -4,6 +4,8 @@
 
 .nav_list_heading {
   margin-bottom: 16px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .nav_list {
@@ -32,11 +34,12 @@
 .social_links_container {
   display: flex;
   gap: 18px;
+  justify-content: center;
 }
 
 .social_links {
   display: flex;
-  background-color: #fefee9;
+  background-color: #fffbc9;
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -58,5 +61,5 @@
 
 .footer_rights {
   font-size: 10px;
-  color: #fff;
+  color: #000;
 }
