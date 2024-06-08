@@ -67,5 +67,8 @@
             "text": "This is yet another testimonial from a content customer.",
             "name": "Bob Smith"
           }
-      ]
+      ],
+      "aboutUs":{
+        "text":"This is a cloud kitchen opened in April 2024"
+      }
 }

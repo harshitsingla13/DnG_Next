@@ -16,6 +16,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
+import axios from "axios";
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 const phoneRegex = new RegExp(/^[6-9]\d{9}$/);
 
@@ -34,7 +37,9 @@ const FormSchema = z.object({
   }),
 });
 
-export function InputForm({ setParentOpen, defaultValue }) {
+export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -45,9 +50,20 @@ export function InputForm({ setParentOpen, defaultValue }) {
     },
   });
 
-  function onSubmit(data) {
-    console.log(data);
-    setParentOpen(false);
+  async function onSubmit({ name, mobile, orderType, orderDetail }) {
+    setIsLoading(true);
+    const res = await axios.post("/api/sendEmail", {
+      name,
+      mobile,
+      orderType,
+      orderDetail,
+    });
+    setIsLoading(false);
+
+    if (res.status === 200) {
+      form.reset();
+      setParentOpen(false);
+    }
   }
 
   return (
@@ -95,13 +111,19 @@ export function InputForm({ setParentOpen, defaultValue }) {
                 >
                   <FormItem className="flex items-center space-x-2 space-y-0">
                     <FormControl>
-                      <RadioGroupItem value="regular" />
+                      <RadioGroupItem
+                        value="regular"
+                        className={radioButtonStyle}
+                      />
                     </FormControl>
                     <FormLabel className="font-normal">Regular Order</FormLabel>
                   </FormItem>
                   <FormItem className="flex items-center space-x-2 space-y-0">
                     <FormControl>
-                      <RadioGroupItem value="bulk" />
+                      <RadioGroupItem
+                        value="bulk"
+                        className={radioButtonStyle}
+                      />
                     </FormControl>
                     <FormLabel className="font-normal">Bulk Order</FormLabel>
                   </FormItem>
@@ -130,7 +152,14 @@ export function InputForm({ setParentOpen, defaultValue }) {
           )}
         />
 
-        <Button type="submit">Submit</Button>
+        {isLoading ? (
+          <Button disabled>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            Please wait
+          </Button>
+        ) : (
+          <Button type="submit">Submit</Button>
+        )}
       </form>
     </Form>
   );

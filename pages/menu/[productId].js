@@ -10,7 +10,8 @@ function ProductPage({ products, setOpen, setFormDefaultValue }) {
   const productId = router.query.productId;
 
   useEffect(() => {
-    setProductsToShow(products[productId] ?? []);
+    const prod = products[productId] ?? [];
+    setProductsToShow(prod?.varieties);
   }, [products, productId]);
 
   //Send a request to backend to fetch data using API and its id

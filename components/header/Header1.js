@@ -24,11 +24,11 @@ export default function Header1() {
               alt="DnG Bakers and Kitchen logo"
             />
             {/* <MountainIcon className="h-6 w-6" /> */}
-            <span className="not-sr-only text-xs xs:text-base">
+            <span className="not-sr-only text-base xs:text-xl">
               DnG Bakers & Kitchen
             </span>
           </Link>
-          <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+          <nav className="hidden items-center gap-6 text-xl font-medium md:flex">
             <Link className="hover:underline" href="/">
               Home
             </Link>

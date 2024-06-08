@@ -1,6 +1,8 @@
 {
     "products": {
-        "cakes":[
+        "cakes":{
+            "title":"Cakes(1 kg)",
+            "varieties":[
         {
             "id":"black_forest_cake",
             "name": "Black Forest Cake",
@@ -41,8 +43,8 @@
             "name": "Tiramisu",
             "image":"/cakes/tiramisu.png"
         }
-    ],
-    "biscuits":[
+    ]},
+    "biscuits":{"varieties":[
         {
             "id":"ajwain",
             "name": "Ajwain biscuits",
@@ -93,8 +95,8 @@
             "name": "Almond Biscotti",
             "image":"/cookies/almond_biscotti.png"
         }
-    ],
-    "breads":[
+    ]},
+    "breads":{"varieties":[
         {
             "id":"burger_bun",
             "name": "Burger Bun",
@@ -120,8 +122,8 @@
             "name": "Focaccia Sourdough",
             "image":"/breads/focaccia.png"
         }
-    ],
-    "ice-cream":[
+    ]},
+    "ice-cream":{"varieties":[
         {
             "id":"vanilla",
             "name": "Vanilla",
@@ -147,8 +149,8 @@
             "name": "Chocolate",
             "image":"/iceCream/chocolate.png"
         }
-    ],
-    "cupcakes":[
+    ]},
+    "cupcakes":{"varieties":[
         {
             "id":"vanilla_cupcake",
             "name": "Vanilla",
@@ -169,6 +171,6 @@
             "name": "Chocolate",
             "image":"/cupcake/chocolate.png"
         }
-    ]
+    ]}
 }
 }

@@ -12,7 +12,11 @@ import {
 } from "@/components/ui/carousel";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
-const AutoPlayCarousel = ({ data, carouselItemContent }) => {
+const AutoPlayCarousel = ({
+  data,
+  carouselItemContent,
+  ...otherCarouselItemProps
+}) => {
   const isDesktop = useMediaQuery("(min-width: 769px)");
   const [api, setApi] = useState();
   const [current, setCurrent] = useState(0);
@@ -66,7 +70,12 @@ const AutoPlayCarousel = ({ data, carouselItemContent }) => {
               key={index}
               className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
-              {carouselItemContent({ data: singleData, isDestop: isDesktop })}
+              {carouselItemContent({
+                data: singleData,
+                isDestop: isDesktop,
+                fromCarousel: true,
+                ...otherCarouselItemProps,
+              })}
               {/* <CarouselItemContent data={singleData} /> */}
             </CarouselItem>
           ))}
