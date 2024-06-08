@@ -89,8 +89,8 @@ const ComingSoonGame = () => {
     <div className="coming-soon-game">
       <h1>Coming Soon!</h1>
       <p className="coming-soon-title">
-        We're working hard to bring you an amazing website. Play our memory game
-        while you wait!
+        We are working hard to bring you an amazing website. Play our memory
+        game while you wait!
       </p>
       <div className="game-board-container">
         <div className="game-board">
