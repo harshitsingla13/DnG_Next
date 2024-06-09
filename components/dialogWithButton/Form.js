@@ -19,6 +19,7 @@ import { Textarea } from "@/components/ui/textarea";
 import axios from "axios";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
+import { useToast } from "../ui/use-toast";
 
 const phoneRegex = new RegExp(/^[6-9]\d{9}$/);
 
@@ -39,6 +40,7 @@ const FormSchema = z.object({
 
 export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast()
 
   const form = useForm({
     resolver: zodResolver(FormSchema),
@@ -52,17 +54,39 @@ export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
 
   async function onSubmit({ name, mobile, orderType, orderDetail }) {
     setIsLoading(true);
-    const res = await axios.post("/api/sendEmail", {
-      name,
-      mobile,
-      orderType,
-      orderDetail,
-    });
-    setIsLoading(false);
+    try {
+      const res = await axios.post("/api/sendEmail", {
+        name,
+        mobile,
+        orderType,
+        orderDetail,
+      });
+      setIsLoading(false);
 
-    if (res.status === 200) {
-      form.reset();
-      setParentOpen(false);
+      if (res.status === 200) {
+        form.reset();
+        setParentOpen(false);
+        toast({
+          title: "Submitted Successfully",
+          description: "The team will reach out to you shortly.",
+        })
+      }
+      else {
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem. Please try again."
+        })
+      }
+    }
+    catch (e) {
+      console.log("Error in Lead creation", error)
+      setIsLoading(false);
+      toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem. Please try again."
+      })
     }
   }
 

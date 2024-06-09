@@ -6,6 +6,8 @@ import styles from "./ProductCard.module.css";
 function ProductCard({
   name,
   image,
+  productPageName="",
+  price="",
   fromCarousel,
   onClickHandler,
   isDesktop,
@@ -14,6 +16,9 @@ function ProductCard({
   if (fromCarousel) {
     name = restProps.data.name;
     image = restProps.data.image;
+  }
+  else {
+    name = productPageName===""?name:productPageName
   }
 
   return (
@@ -48,7 +53,7 @@ function ProductCard({
         </span> */}
         <div className={`p-4 ${fromCarousel && `hidden`}`}>
           <h3 className="text-lg font-semibold">{name}</h3>
-          <p className="text-gray-500 dark:text-gray-400 mt-1">$99.99</p>
+          <p className="text-gray-500 dark:text-gray-400 mt-1">&#8377; {price===""?"-":price}</p>
         </div>
       </CardContent>
     </Card>

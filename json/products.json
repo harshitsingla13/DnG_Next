@@ -1,175 +1,225 @@
 {
     "products": {
         "cakes":{
-            "title":"Cakes(1 kg)",
+            "title":"Cakes",
+            "productPageTitle":"Cakes(1 kg)",
             "varieties":[
         {
             "id":"black_forest_cake",
             "name": "Black Forest Cake",
-            "image":"/cakes/black_forest_cake.png"
+            "image":"/cakes/black_forest_cake.png",
+            "price":"750"
         },
         {
             "id":"chocolate_truffle_cake",
             "name": "Chocolate Truffle Cake",
-            "image":"/cakes/chocolate_truffle_cake.png"
+            "image":"/cakes/chocolate_truffle_cake.png",
+            "price":"800"
         },
         {
             "id":"cheese_cake",
-            "name": "Cheese Cake",
-            "image":"/cakes/cheese_cake.png"
+            "name": "NY-Baked Cheese Cake",
+            "image":"/cakes/cheese_cake.png",
+            "price":"1200"
         },
         {
             "id":"mix_fruit_cake",
             "name": "Mix Fruit Cake",
-            "image":"/cakes/mix_fruit_cake.png"
+            "image":"/cakes/mix_fruit_cake.png",
+            "price":"850"
         },
         {
             "id":"opera_cake",
             "name": "Opera Cake",
-            "image":"/cakes/opera_cake.png"
+            "image":"/cakes/opera_cake.png",
+            "price":"750"
         },
         {
             "id":"pineapple_cake",
             "name": "Pineapple Cake",
-            "image":"/cakes/pineapple_cake.jpg"
+            "image":"/cakes/pineapple_cake.jpg",
+            "price":"700"
         },
         {
             "id":"strawberry_cake",
             "name": "Strawberry Cake",
-            "image":"/cakes/strawberry_cake.png"
+            "image":"/cakes/strawberry_cake.png",
+            "price":"750"
         },
         {
             "id":"tiramisu",
             "name": "Tiramisu",
-            "image":"/cakes/tiramisu.png"
+            "image":"/cakes/tiramisu.png",
+            "price":"1350"
         }
     ]},
-    "biscuits":{"varieties":[
+    "biscuits":{
+        "title":"Biscuits",
+        "productPageTitle":"Biscuits(1 kg)",
+        "varieties":[
         {
             "id":"ajwain",
             "name": "Ajwain biscuits",
-            "image":"/cookies/ajwain.png"
+            "image":"/cookies/ajwain.png",
+            "price":"560"
         },
         {
             "id":"atta",
             "name": "Atta biscuits",
-            "image":"/cookies/atta.png"
+            "image":"/cookies/atta.png",
+            "price":"550"
         },
         {
             "id":"choco_hazelnut",
             "name": "Chocolate Hazelnut biscuits",
-            "image":"/cookies/choco_hazelnut.png"
+            "image":"/cookies/choco_hazelnut.png",
+            "price":"1050"
         },
         {
             "id":"chocolate",
             "name": "Chocolate biscuits",
-            "image":"/cookies/chocolate.png"
+            "image":"/cookies/chocolate.png",
+            "price":"600"
         },
         {
             "id":"coconut",
             "name": "Coconut biscuits",
-            "image":"/cookies/coconut.png"
+            "image":"/cookies/coconut.png",
+            "price":"800"
         },
         {
             "id":"jeera",
             "name": "Jeera biscuits",
-            "image":"/cookies/jeera.png"
+            "image":"/cookies/jeera.png",
+            "price":"560"
         },
         {
             "id":"kaju_pista",
             "name": "Kaju Pista biscuits",
-            "image":"/cookies/kaju_pista.png"
+            "image":"/cookies/kaju_pista.png",
+            "price":"850"
         },
         {
             "id":"nan_khatai",
             "name": "Nan Khatai biscuits",
-            "image":"/cookies/nan_khatai.png"
+            "image":"/cookies/nan_khatai.png",
+            "price":"950"
         },
         {
             "id":"pistachio_biscotti",
             "name": "Pistachio Biscotti",
-            "image":"/cookies/pistachio_biscotti.png"
+            "image":"/cookies/pistachio_biscotti.png",
+            "price":"1250"
         },
         {
             "id":"almond_biscotti",
             "name": "Almond Biscotti",
-            "image":"/cookies/almond_biscotti.png"
+            "image":"/cookies/almond_biscotti.png",
+            "price":"900"
         }
     ]},
-    "breads":{"varieties":[
+    "breads":{
+        "title":"Breads",
+        "productPageTitle":"Breads",
+        "varieties":[
         {
             "id":"burger_bun",
             "name": "Burger Bun",
-            "image":"/breads/burger_bun.png"
+            "productPageName":"Burger Bun(6 Pcs)",
+            "image":"/breads/burger_bun.png",
+            "price":"48/36"
         },
         {
             "id":"pav_bun",
             "name": "Pav Bun",
-            "image":"/breads/pav_bun.png"
+            "productPageName":"Pav Bun(6 Pcs)",
+            "image":"/breads/pav_bun.png",
+            "price":"36"
         },
         {
             "id":"sweet_bun",
             "name": "Sweet Bun",
-            "image":"/breads/sweet_bun.png"
+            "productPageName":"Sweet Bun(180 gm)",
+            "image":"/breads/sweet_bun.png",
+            "price":"16"
         },
         {
             "id":"sourdough",
-            "name": "Sourdough",
-            "image":"/breads/sourdough.png"
+            "name": "Classic Sourdough",
+            "productPageName":"Classic Sourdough(500 gm)",
+            "image":"/breads/sourdough.png",
+            "price":"175"
         },
         {
             "id":"focaccia",
-            "name": "Focaccia Sourdough",
-            "image":"/breads/focaccia.png"
+            "name": "Sourdough Focaccia",
+            "productPageName":"Sourdough Focaccia(250 gm)",
+            "image":"/breads/focaccia.png",
+            "price":"115"
         }
     ]},
-    "ice-cream":{"varieties":[
+    "ice-cream":{
+        "title":"Naturals Style Ice-cream",
+        "productPageTitle":"Naturals Style Ice-cream(350 gm)",
+        "varieties":[
         {
             "id":"vanilla",
             "name": "Vanilla",
-            "image":"/iceCream/vanilla.png"
+            "image":"/iceCream/vanilla.png",
+            "price":"120"
         },
         {
             "id":"paan",
             "name": "Paan",
-            "image":"/iceCream/paan.png"
+            "image":"/iceCream/paan.png",
+            "price":"200"
         },
         {
             "id":"oreo",
             "name": "Oreo",
-            "image":"/iceCream/oreo.png"
+            "image":"/iceCream/oreo.png",
+            "price":"150"
         },
         {
             "id":"mango",
             "name": "Mango",
-            "image":"/iceCream/mango.png"
+            "image":"/iceCream/mango.png",
+            "price":"220"
         },
         {
             "id":"chocolate",
             "name": "Chocolate",
-            "image":"/iceCream/chocolate.png"
+            "image":"/iceCream/chocolate.png",
+            "price":"175"
         }
     ]},
-    "cupcakes":{"varieties":[
+    "cupcakes":{
+        "title":"Cupcakes",
+        "productPageTitle":"Cupcakes(6 Pcs)",
+        "varieties":[
         {
             "id":"vanilla_cupcake",
             "name": "Vanilla",
-            "image":"/cupcake/vanilla_cupcake.png"
+            "image":"/cupcake/vanilla_cupcake.png",
+            "price":"110"
         },
         {
             "id":"orange",
             "name": "Orange",
-            "image":"/cupcake/orange.png"
+            "image":"/cupcake/orange.png",
+            "price":"250"
         },
         {
             "id":"strawberry",
             "name": "Strawberry",
-            "image":"/cupcake/strawberry.png"
+            "image":"/cupcake/strawberry.png",
+            "price":"300"
         },
         {
             "id":"chocolate",
             "name": "Chocolate",
-            "image":"/cupcake/chocolate.png"
+            "image":"/cupcake/chocolate.png",
+            "price":"180"
         }
     ]}
 }

@@ -11,14 +11,16 @@ function ProductPage({ products, setOpen, setFormDefaultValue }) {
 
   useEffect(() => {
     const prod = products[productId] ?? [];
-    setProductsToShow(prod?.varieties);
+    setProductsToShow(prod);
   }, [products, productId]);
 
   //Send a request to backend to fetch data using API and its id
 
   return (
+    <>
+      <h2 className="text-center font-semibold pb-4 text-2xl lg:text-3xl">{productsToShow.productPageTitle}</h2>
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {productsToShow.map((product) => (
+      {productsToShow?.varieties?.map((product) => (
         <div
           key={product?.id}
           className="cursor-pointer"
@@ -33,7 +35,8 @@ function ProductPage({ products, setOpen, setFormDefaultValue }) {
           <ProductCard {...product} />
         </div>
       ))}
-    </div>
+      </div>
+      </>
   );
 }
 

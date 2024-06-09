@@ -43,7 +43,7 @@ function Footer() {
               className={`${styles.nav_list} flex-col flex-wrap justify-center text-center md:flex-row`}
             >
               <li className={styles.nav_actions}>
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <Separator
                 orientation="vertical"
@@ -51,7 +51,7 @@ function Footer() {
                 className="h-6 self-center hidden md:block"
               />
               <li className={styles.nav_actions}>
-                <Link href="#">Menu</Link>
+                <Link href="/menu">Menu</Link>
               </li>
               <Separator
                 className="h-6 self-center hidden md:block"
@@ -97,7 +97,7 @@ function Footer() {
               className={`${styles.nav_list} flex-col flex-wrap justify-center text-center md:flex-row`}
             >
               <li className={styles.nav_actions}>
-                <Link href="#">Cakes</Link>
+                <Link href="/menu/cakes">Cakes</Link>
               </li>
               <Separator
                 orientation="vertical"
@@ -105,7 +105,7 @@ function Footer() {
                 className="h-6 self-center hidden md:block"
               />
               <li className={styles.nav_actions}>
-                <Link href="#">Biscuits</Link>
+                <Link href="/menu/biscuits">Biscuits</Link>
               </li>
               <Separator
                 className="h-6 self-center hidden md:block"
@@ -113,7 +113,7 @@ function Footer() {
                 decorative
               />
               <li className={styles.nav_actions}>
-                <Link href="/about">Cupcakes</Link>
+                <Link href="/menu/cupcakes">Cupcakes</Link>
               </li>
               <Separator
                 className="h-6 self-center hidden md:block"
@@ -121,7 +121,7 @@ function Footer() {
                 decorative
               />
               <li className={styles.nav_actions}>
-                <Link href="/contact">Breads</Link>
+                <Link href="/menu/breads">Breads</Link>
               </li>
               <Separator
                 className="h-6 self-center hidden md:block"
@@ -129,7 +129,7 @@ function Footer() {
                 decorative
               />
               <li className={styles.nav_actions}>
-                <Link href="/contact">Ice-cream</Link>
+                <Link href="/menu/ice-cream">Ice-cream</Link>
               </li>
             </ul>
           </span>
