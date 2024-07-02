@@ -7,7 +7,7 @@ export const Layout = (props) => {
   const { children } = props;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen max-w-[1728px] m-auto bg-[#fffbc9]">
       {/* <Header /> */}
       <Header1 />
       {/* shimmer skeleton loader */}

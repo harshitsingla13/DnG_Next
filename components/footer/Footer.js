@@ -11,7 +11,7 @@ function Footer() {
   const emailId = "dngbakersandkitchen@gmail.com",
     ccEmail = "hsingla08@gmail.com";
   return (
-    <footer className="border-t-[#ddd77c] border-solid border-t-1 px-12 py-2">
+    <footer className="border-t-[#ddd77c] border-solid border-t-1 px-4 py-2 bg-white md:px-12">
       <div className="footer-content">
         <div>
           {/* <p className={styles.font_size}>Contact for more</p> */}
@@ -37,7 +37,7 @@ function Footer() {
 
         <Separator className={`${styles.divider}`} decorative />
         <nav className={`${styles.nav} flex justify-between`}>
-          <span className="w-[40%]">
+          <span className="">
             <p className={styles.nav_list_heading}>Quick Actions</p>
             <ul
               className={`${styles.nav_list} flex-col flex-wrap justify-center text-center md:flex-row`}
@@ -136,7 +136,7 @@ function Footer() {
         </nav>
       </div>
       <p className={styles.footer_rights}>
-        &copy; 2023 DnG Bakers & Kitchen. All rights reserved.
+        &copy; 2024 DnG Bakers & Kitchen. All rights reserved.
       </p>
     </footer>
   );

@@ -1,3 +1,4 @@
+import AboutUsSection from "@/components/aboutUsSection/AboutUsSection";
 import AutoPlayCarousel from "@/components/autoPlayCarousel/AutoPlayCarousel";
 import ProductCarouselCard from "@/components/productCarouselCard/ProductCarouselCard";
 import TestimonialContainer from "@/components/testimonialContainer/TestimonialContainer";
@@ -11,9 +12,11 @@ function Home({ categories, testimonials }) {
         data={categories}
         carouselItemContent={ProductCarouselCard}
       />
-      <section>Info/About us</section>
-      <section>USP</section>
-      <TestimonialContainer testimonials={testimonials} />
+      <section>
+        <AboutUsSection showTitle={true} truncate={true} />
+      </section>
+      {/* <section>USP</section> */}
+      {/* <TestimonialContainer testimonials={testimonials} /> */}
       <section></section>
     </div>
   );

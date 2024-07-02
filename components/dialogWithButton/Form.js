@@ -20,6 +20,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "../ui/use-toast";
+import Link from "next/link";
 
 const phoneRegex = new RegExp(/^[6-9]\d{9}$/);
 
@@ -40,7 +41,7 @@ const FormSchema = z.object({
 
 export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
   const [isLoading, setIsLoading] = useState(false);
-  const { toast } = useToast()
+  const { toast } = useToast();
 
   const form = useForm({
     resolver: zodResolver(FormSchema),
@@ -69,24 +70,28 @@ export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
         toast({
           title: "Submitted Successfully",
           description: "The team will reach out to you shortly.",
-        })
-      }
-      else {
+        });
+      } else {
         toast({
           variant: "destructive",
           title: "Uh oh! Something went wrong.",
-          description: "There was a problem. Please try again."
-        })
+          description: "There was a problem. Please try again.",
+        });
       }
-    }
-    catch (e) {
-      console.log("Error in Lead creation", error)
+    } catch (e) {
+      console.log("Error in Lead creation", error);
       setIsLoading(false);
       toast({
         variant: "destructive",
         title: "Uh oh! Something went wrong.",
-        description: "There was a problem. Please try again."
-      })
+        description: "There was a problem. Please try again.",
+      });
+    }
+  }
+
+  function onClick(site) {
+    if (site === "swiggy") {
+      navi;
     }
   }
 
@@ -184,6 +189,24 @@ export function InputForm({ setParentOpen, defaultValue, radioButtonStyle }) {
         ) : (
           <Button type="submit">Submit</Button>
         )}
+        <div className="flex gap-2">
+          <Button className="flex bg-[#E23744] white" asChild>
+            <Link
+              target="_blank"
+              href="https://www.zomato.com/ncr/dng-bakers-and-kitchen-basai-village-gurgaon"
+            >
+              Order on Zomato
+            </Link>
+          </Button>
+          <Button className="flex bg-[#fc8019] white" asChild>
+            <Link
+              target="_blank"
+              href="https://www.swiggy.com/restaurants/dng-bakers-and-kitchen-prem-nagar-sector-14-gurgaon-909908"
+            >
+              Order on Swiggy
+            </Link>
+          </Button>
+        </div>
       </form>
     </Form>
   );

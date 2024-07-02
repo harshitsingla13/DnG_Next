@@ -2,120 +2,138 @@
     "products": {
         "cakes":{
             "title":"Cakes",
-            "productPageTitle":"Cakes(1 kg)",
+            "productPageTitle":"Cakes",
             "varieties":[
         {
             "id":"black_forest_cake",
-            "name": "Black Forest Cake",
+            "name": "Black Forest",
+            "productPageName":"Black Forest(1/2 kg)",
             "image":"/cakes/black_forest_cake.png",
-            "price":"750"
+            "price":"400"
         },
         {
             "id":"chocolate_truffle_cake",
-            "name": "Chocolate Truffle Cake",
+            "name": "Chocolate Truffle",
+            "productPageName":"Chocolate Truffle(1/2 kg)",
             "image":"/cakes/chocolate_truffle_cake.png",
-            "price":"800"
+            "price":"450"
         },
         {
             "id":"cheese_cake",
-            "name": "NY-Baked Cheese Cake",
+            "name": "NY-Baked Cheese",
+            "productPageName":"NY-Baked Cheese(1 kg)",
             "image":"/cakes/cheese_cake.png",
             "price":"1200"
         },
         {
             "id":"mix_fruit_cake",
-            "name": "Mix Fruit Cake",
+            "name": "Mix Fruit",
+            "productPageName":"Mix Fruit(1/2 kg)",
             "image":"/cakes/mix_fruit_cake.png",
-            "price":"850"
+            "price":"550"
         },
         {
             "id":"opera_cake",
             "name": "Opera Cake",
+            "productPageName":"Opera Cake(1 kg)",
             "image":"/cakes/opera_cake.png",
-            "price":"750"
+            "price":"1400"
         },
         {
             "id":"pineapple_cake",
-            "name": "Pineapple Cake",
+            "name": "Pineapple",
+            "productPageName":"Pineapple(1/2 kg)",
             "image":"/cakes/pineapple_cake.jpg",
-            "price":"700"
+            "price":"370"
         },
         {
             "id":"strawberry_cake",
             "name": "Strawberry Cake",
+            "productPageName":"Strawberry & white chocolate(1/2 kg)",
             "image":"/cakes/strawberry_cake.png",
-            "price":"750"
+            "price":"600"
         },
         {
             "id":"tiramisu",
             "name": "Tiramisu",
+            "productPageName":"Tiramisu(1 kg)",
             "image":"/cakes/tiramisu.png",
             "price":"1350"
         }
     ]},
     "biscuits":{
         "title":"Biscuits",
-        "productPageTitle":"Biscuits(1 kg)",
+        "productPageTitle":"Biscuits",
         "varieties":[
         {
             "id":"ajwain",
-            "name": "Ajwain biscuits",
+            "name": "Ajwain",
+            "productPageName":"Ajwain(1/2 kg)",
             "image":"/cookies/ajwain.png",
-            "price":"560"
+            "price":"280"
         },
         {
             "id":"atta",
-            "name": "Atta biscuits",
+            "name": "Atta",
+            "productPageName":"Atta(1/2 kg)",
             "image":"/cookies/atta.png",
-            "price":"550"
+            "price":"275"
         },
         {
             "id":"choco_hazelnut",
-            "name": "Chocolate Hazelnut biscuits",
+            "name": "Chocolate Hazelnut",
+            "productPageName":"Chocolate Hazelnut(1/2 kg)",
             "image":"/cookies/choco_hazelnut.png",
-            "price":"1050"
+            "price":"525"
         },
         {
             "id":"chocolate",
-            "name": "Chocolate biscuits",
+            "name": "Chocolate",
+            "productPageName":"Chocolate(1/2 kg)",
             "image":"/cookies/chocolate.png",
-            "price":"600"
+            "price":"300"
         },
         {
             "id":"coconut",
-            "name": "Coconut biscuits",
+            "name": "Coconut",
+            "productPageName":"Coconut(1/2 kg)",
             "image":"/cookies/coconut.png",
-            "price":"800"
+            "price":"400"
         },
         {
             "id":"jeera",
-            "name": "Jeera biscuits",
+            "name": "Jeera",
+            "productPageName":"Jeera(1/2 kg)",
             "image":"/cookies/jeera.png",
-            "price":"560"
+            "price":"280"
         },
         {
             "id":"kaju_pista",
-            "name": "Kaju Pista biscuits",
+            "name": "Kaju Pista",
+            "productPageName":"Kaju Pista(1/2 kg)",
             "image":"/cookies/kaju_pista.png",
-            "price":"850"
+            "price":"430"
         },
         {
             "id":"nan_khatai",
-            "name": "Nan Khatai biscuits",
+            "name": "Nan Khatai",
+            "productPageName":"Nan Khatai(1/2 kg)",
             "image":"/cookies/nan_khatai.png",
-            "price":"950"
+            "price":"475"
         },
         {
             "id":"pistachio_biscotti",
             "name": "Pistachio Biscotti",
+            "productPageName":"Pistachio Biscotti(1/2 kg)",
             "image":"/cookies/pistachio_biscotti.png",
-            "price":"1250"
+            "price":"625"
         },
         {
             "id":"almond_biscotti",
             "name": "Almond Biscotti",
+            "productPageName":"Almond Biscotti(1/2 kg)",
             "image":"/cookies/almond_biscotti.png",
-            "price":"900"
+            "price":"450"
         }
     ]},
     "breads":{
