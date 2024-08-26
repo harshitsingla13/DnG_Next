@@ -8,7 +8,7 @@ const FloatingButton = (props, ref) => {
       variant="outline"
       size="icon"
       // className="fixed bottom-4 right-4 bg-black"
-      className="bg-black"
+      className="bg-black hover:bg-black"
       {...props}
     >
       <MessageSquare

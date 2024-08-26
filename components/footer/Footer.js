@@ -11,7 +11,7 @@ function Footer() {
   const emailId = "dngbakersandkitchen@gmail.com",
     ccEmail = "hsingla08@gmail.com";
   return (
-    <footer className="border-t-[#ddd77c] border-solid border-t-1 px-4 py-2 bg-white md:px-12">
+    <footer className="border-t-[#ddd77c] border-solid border-t-1 px-4 py-2 bg-[#02060c] text-[#ffffffeb] md:px-12">
       <div className="footer-content">
         <div>
           {/* <p className={styles.font_size}>Contact for more</p> */}

@@ -7,7 +7,7 @@ export const Layout = (props) => {
   const { children } = props;
 
   return (
-    <div className="min-h-screen max-w-[1728px] m-auto bg-[#fffbc9]">
+    <div className="min-h-screen max-w-[1728px] m-auto bg-[#fff]">
       {/* <Header /> */}
       <Header1 />
       {/* shimmer skeleton loader */}
@@ -15,7 +15,7 @@ export const Layout = (props) => {
 
       {/* artist component */}
       <main
-        className="bg-[#fffbc9] py-5 px-7 md:py-9 md:px-12 #000"
+        className="bg-[#fff] py-5 px-7 md:py-9 md:px-12 #000"
         // style={{ padding: "36px 48px", color: "#000000" }}
       >
         {children}

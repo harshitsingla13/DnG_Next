@@ -9,6 +9,7 @@ function About() {
       <h2 className="my-6 text-3xl font-bold">About Us</h2>
       <div className="relative h-[200px] md:h-[450px]">
         <Image
+          priority
           src={dhruvImage}
           alt="Call image"
           fill

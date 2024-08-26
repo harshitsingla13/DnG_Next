@@ -50,7 +50,7 @@ export default function Header1() {
               </Button>
             </SheetTrigger>
             <SheetContent
-              className="transition-all duration-300 ease-in-out bg-[#fffbc9]"
+              className="transition-all duration-300 ease-in-out bg-[#fff]"
               side="right"
             >
               <div className="grid gap-4 p-6">

@@ -82,8 +82,8 @@ const AutoPlayCarousel = ({
         </CarouselContent>
         {isDesktop && (
           <>
-            <CarouselPrevious className="bg-[#fffbc9] border-transparent" />
-            <CarouselNext className="bg-[#fffbc9] border-transparent" />
+            <CarouselPrevious className="bg-[#fff] border-transparent" />
+            <CarouselNext className="bg-[#fff] border-transparent" />
           </>
         )}
         {!isDesktop && (
